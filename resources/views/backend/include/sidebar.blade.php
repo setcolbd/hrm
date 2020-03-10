@@ -46,7 +46,7 @@
                                 <li class="sidebar-item"><a href="{{route('admin.info.leave')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Leave Info </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="far fa-dot-circle"></i><span class="hide-menu">Payroll</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-donate"></i><span class="hide-menu">Payroll</span></a>
                             <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{route('admin.create.salary')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu">Create salaray</span></a></li>
                                 <li class="sidebar-item"><a href="{{route('admin.info.salary')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Salary Info </span></a></li>
@@ -55,7 +55,12 @@
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Provident Fund</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Performance</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Holiday</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Announcement</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="far fa-stop-circle"></i><span class="hide-menu">Announcement</span></a>
+                            <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('admin.create.announcement')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu">Create Announcement</span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.info.announcement')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Announce Info </span></a></li>
+                            </ul>
+                        </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Admin Role</span></a></li>
                     </ul>
                 </nav>

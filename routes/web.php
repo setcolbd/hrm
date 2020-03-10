@@ -58,4 +58,10 @@ Route::get('leave-info','Admin\LeaveController@leaveInfo')->name('admin.info.lea
 Route::get('create-salary','Admin\SalaryController@createSalary')->name('admin.create.salary');
 Route::get('salary-info','Admin\SalaryController@salaryInfo')->name('admin.info.salary');
 
+//salary route
+Route::get('create-announcement','Admin\AnnouncementController@createAnnouncement')->name('admin.create.announcement');
+Route::get('announcement-info','Admin\AnnouncementController@announcementInfo')->name('admin.info.announcement');
+
+
+
 

@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Create Leave')
+@section('title','Create Announcement')
 
 @push('css')
 <style type="text/css">
@@ -39,33 +39,9 @@
                         <div class="card">
                             <form class="form-horizontal">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center">Create Leave</h4>
+                                    <h4 class="card-title text-center">Create Announcement</h4>
                                     <div class="form-group row">
-                                        <label for="from_date" class="col-sm-3 text-right control-label col-form-label">From Date</label>
-                                         <div class="col-sm-9 input-group">
-                                            <input type="text" class="form-control" id="from_date" placeholder="mm/dd/yyy">
-                                            <div class="input-group-append">
-                                              <span class="form-control"><i class="fa fa-calendar"></i></span>
-                                            </div>
-                                         </div>
-                                    </div> 
-                                    <div class="form-group row">
-                                        <label for="to_date" class="col-sm-3 text-right control-label col-form-label">To Date</label>
-                                            <div class="col-sm-9 input-group">
-                                            <input type="text" class="form-control" id="to_date" placeholder="mm/dd/yyy">
-                                            <div class="input-group-append">
-                                              <span class="form-control"><i class="fa fa-calendar"></i></span>
-                                            </div>
-                                         </div>
-                                    </div> 
-                                    <div class="form-group row">
-                                        <label for="no_of_day" class="col-sm-3 text-right control-label col-form-label">No Of Days</label>
-                                            <div class="col-sm-9">
-                                            <input type="number" class="form-control" id="no_of_day" placeholder="No Of Days">
-                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="reason" class="col-sm-3 text-right control-label col-form-label">Reason</label>
+                                        <label for="reason" class="col-sm-3 text-right control-label col-form-label">Announcement</label>
                                             <div class="col-sm-9">
                                             <textarea class="form-control" name="reason" id="reason"></textarea>
                                          </div>

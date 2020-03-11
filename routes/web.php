@@ -62,6 +62,12 @@ Route::get('salary-info','Admin\SalaryController@salaryInfo')->name('admin.info.
 Route::get('create-announcement','Admin\AnnouncementController@createAnnouncement')->name('admin.create.announcement');
 Route::get('announcement-info','Admin\AnnouncementController@announcementInfo')->name('admin.info.announcement');
 
+//role route
+Route::get('create-role','Admin\RoleController@createRole')->name('admin.create.role');
+
+//provident route
+Route::get('provident_info','Admin\ProvidentFundController@providentInfo')->name('admin.info.provident');
+
 
 
 

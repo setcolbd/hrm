@@ -6,7 +6,10 @@
 <style type="text/css">
     .btn-c{background: #2681A7;}
     .form-control{border:1px solid #a7a1a1;}
+    .text{color:#fff;}
 </style>
+<link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/select2/dist/css/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
 @endpush
 
 @section('content')
@@ -19,7 +22,7 @@
             <div class="col-12 d-flex no-block align-items-center">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control select2">
                         <option readonly="">Select Card No</option>
                         <option>All</option>
                         <option>DT-9689</option>
@@ -29,7 +32,7 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control select2">
                         <option readonly="">Select Department</option>
                         <option>All</option>
                         <option>IT</option>
@@ -39,13 +42,13 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                      <input type="date" class="form-control" id="start_date" placeholder="Start Date">
+                      <input type="text" class="form-control" id="start_date" placeholder="Start Date">
                 </div>
                 <div class="col-md-2">
-                      <input type="date" class="form-control" id="end_date" placeholder="End Date">
+                      <input type="text" class="form-control" id="end_date" placeholder="End Date">
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" class="btn btn-c"><i class="fas fa-search"></i> Search</button>
+                    <button type="submit" class="btn btn-c text"><i class="fas fa-search"></i> Search</button>
                 </div>
             </div>
         </div>
@@ -61,7 +64,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> All Employee <span class="badge badge-secondary">19</span></h5>
+                                <h5 class="card-title"> All Employee <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
@@ -150,6 +153,23 @@
     <!-- ============================================================== -->
     <!-- End Container fluid  -->
 @push('js')
+<script src="{{asset('hrm/assets/libs/select2/dist/js/select2.full.min.js')}}"></script>
+<script src="{{asset('hrm/assets/libs/select2/dist/js/select2.min.js')}}"></script>
+<script>
+   $(".select2").select2();
+</script>
+/*datwpicker*/
+    <script src="{{asset('hrm/assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
+    <script>
+        jQuery('#start_date').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
 
+        jQuery('#end_date').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+    </script>
 @endpush
 @endsection            

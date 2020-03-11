@@ -6,6 +6,7 @@
 <style type="text/css">
 	.btn-c{background: #2681A7;}
     .form-control{border:1px solid #a7a1a1;}
+    .text{color:#fff;}
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/select2/dist/css/select2.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
@@ -115,7 +116,7 @@
                                     <div class="form-group row">
                                         <label for="email1" class="col-sm-3 text-right control-label col-form-label">Join Date</label>
                                         <div class="col-sm-9 input-group">
-                                            <input type="text" class="form-control" id="join_date" placeholder="mm/dd/yyy">
+                                            <input type="text" class="form-control" id="join_date" placeholder="Join Date">
                                             <div class="input-group-append">
                                               <span class="form-control"><i class="fa fa-calendar"></i></span>
                                             </div>
@@ -153,7 +154,7 @@
                                 </div>
                                 <div class="border-top text-center">
                                     <div class="card-body">
-                                        <button type="button" class="btn btn-c">Submit</button>
+                                        <button type="button" class="btn btn-c text">Submit</button>
                                     </div>
                                 </div>
                             </form>

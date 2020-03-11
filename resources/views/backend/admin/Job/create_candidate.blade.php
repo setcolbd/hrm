@@ -6,6 +6,7 @@
 <style type="text/css">
 	.btn-c{background: #2681A7;}
     .form-control{border:1px solid #a7a1a1;}
+    .text{color:#fff;}
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/select2/dist/css/select2.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
@@ -108,7 +109,7 @@
                         </div>
                         <div class="border-top text-center">
                             <div class="card-body">
-                                <button type="button" class="btn btn-c">Submit</button>
+                                <button type="button" class="btn btn-c text">Submit</button>
                             </div>
                         </div>
                     </form>

@@ -6,6 +6,7 @@
 <style type="text/css">
     .btn-c{background: #2681A7;}
     .form-control{border:1px solid #a7a1a1;}
+    .text{color:#fff;}
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/select2/dist/css/select2.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('hrm/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
@@ -58,7 +59,7 @@
                      </div>
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" class="btn btn-c"><i class="fas fa-search"></i> Search</button>
+                    <button type="submit" class="btn btn-c text"><i class="fas fa-search"></i> Search</button>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> All Employee <span class="badge badge-secondary">19</span></h5>
+                                <h5 class="card-title"> All Loans <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>

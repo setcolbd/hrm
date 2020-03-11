@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Attendance Info')
+@section('title','Provident Info')
 
 @push('css')
 <style type="text/css">
@@ -20,41 +20,15 @@
      	<form action="" method=""POST>
         <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-            	<div class="col-md-2"></div>
-                <div class="col-md-2">
-                	<select class="form-control select2" id="month" data-live-search="true">
-                    	<option>Select Month</option>
-                    	<option>January</option>
-                    	<option>February</option>
-                    	<option>March</option>
-                    	<option>April</option>
-                    	<option>May</option>
-                    	<option>June</option>
-                    	<option>July</option>
-                    	<option>August</option>
-                    	<option>September</option>
-                    	<option>October</option>
-                    	<option>November</option>
-                    	<option>December</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                      <select class="form-control select2" id="year" data-live-search="true">
-                    	<option>Select Year</option>
-                    	<option>2020</option>
-                    	<option>2021</option>
-                    	<option>2022</option>
-                    	<option>2023</option>
-                      </select>
-                </div>
+            	<div class="col-md-4"></div>
                 <div class="col-md-2">
                 	<select class="form-control select2" id="card_no" data-live-search="true">
                     	<option>Select Card No</option>
-                        <option>All</option>
-                        <option>DT-098788</option>
-                        <option>EX-988788</option>
-                        <option>BS-980765</option>
-                        <option>GR-097234</option>
+                    	<option>All</option>
+                    	<option>DT-098788</option>
+                    	<option>EX-988788</option>
+                    	<option>BS-980765</option>
+                    	<option>GR-097234</option>
                     </select>
                 </div>
                 <div class="col-md-2">
@@ -71,37 +45,43 @@
     <!-- ============================================================== -->
     <div class="container-fluid">
         <div class="row">
-                    <div class="col-12">
+                    <div class="col-8 offset-md-2">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> Salary <span class="badge badge-secondary btn-c">19</span></h5>
+                                <h5 class="card-title"> Provident Funds <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Card No</th>
-                                                <th>Month</th>
-                                                <th>Year</th>
                                                 <th>Salary</th>
-                                                <th>Deduction</th>
-                                                <th>Allowence</th>
-                                                <th>Net Amount</th>
-                                                <th>Receipt</th>
+                                                <th>PA/PM</th> <!-- //PAPM-provident amount per month -->
+                                                <th>PFA Amount</th> <!-- //PAPM-provident fund month -->
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>Rhona Davidson</td>
                                                 <td>DT-0989</td>
-                                                <td>March</td>
-                                                <td>2020</td>
-                                                <td>30000</td>
-                                                <td>350</td>
-                                                <td>5000</td>
-                                                <td>34650</td>
-                                                <td class="text-center">
-                                                    <a href="#" class="btn btn-sm btn-c text" >Receipt</a>
+                                                <td>50000 BDT</td>
+                                                <td>500 BDT</td>
+                                                <td>500 BDT</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-success" >Matured</button>
+                                                    <a href="#" class="btn btn-sm btn-danger" >Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rhona Davidson</td>
+                                                <td>DT-0989</td>
+                                                <td>50000 BDT</td>
+                                                <td>500 BDT</td>
+                                                <td>500 BDT</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-success" >Pending</button>
+                                                    <a href="#" class="btn btn-sm btn-danger" >Delete</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -109,13 +89,10 @@
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Card No</th>
-                                                <th>Month</th>
-                                                <th>Year</th>
                                                 <th>Salary</th>
-                                                <th>Deduction</th>
-                                                <th>Allowence</th>
-                                                <th>Net Amount</th>
-                                                <th>Receipt</th>
+                                                <th>PA/PM</th>
+                                                <th>PFA Amount</th>
+                                                <th>Status</th>
                                             </tr>
                                         </tfoot>
                                     </table>

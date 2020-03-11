@@ -58,7 +58,7 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
             <!-- footer -->
-            <footer class="footer text-center">
+            <footer class="footer text-center" style="margin-top:250px;">
                 <div style="background:#fff;" class="page-wrapper">
                   All Rights Reserved by setcolbd. Designed and Developed by <a href="https://setcolbd.com">setcolbd</a>.
                 </div>

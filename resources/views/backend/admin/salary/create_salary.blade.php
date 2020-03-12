@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Create Loan')
+@section('title','Create Salary')
 
 @push('css')
 <style type="text/css">

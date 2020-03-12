@@ -1,37 +1,23 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/', function () {
-    return view('backend.admin.dashboard');
+    return view('custom_login');
 });
 
-Route::get('dashboard','Admin\DashboardController@dashboard')->name('admin.dashboard');
+// Route::get('dashboard','Admin\DashboardController@dashboard')->name('admin.dashboard');
 
-//employee route
-Route::get('create-employee','Admin\EmployeeController@createEmployee')->name('admin.create.employee');
-Route::get('employee-info','Admin\EmployeeController@employeeInfo')->name('admin.info.employee');
-Route::get('employee-resign','Admin\EmployeeController@resignEmployee')->name('admin.resign.employee');
-Route::get('employee-terminate','Admin\EmployeeController@terminateEmployee')->name('admin.terminate.employee');
+//user route
+Route::get('create-user','Admin\EmployeeController@createUser')->name('admin.create.user');
+Route::get('user-info','Admin\EmployeeController@userInfo')->name('admin.info.user');
+Route::get('resign-user','Admin\EmployeeController@resignUser')->name('admin.resign.user');
+Route::get('terminate-user','Admin\EmployeeController@terminateUser')->name('admin.terminate.user');
 
 //attendance route
 Route::get('create-attendance','Admin\AttendenceController@createAttendance')->name('admin.create.attendance');
 Route::get('attendance-info','Admin\AttendenceController@attendanceInfo')->name('admin.info.attendance');
 
-//user route
+//user-group route
 Route::get('user-group','Admin\UserController@userGroup')->name('admin.group.user');
 
 //task route
@@ -54,6 +40,10 @@ Route::get('create-messagae','Admin\MessageController@createMessage')->name('adm
 Route::get('create-leave','Admin\LeaveController@createLeave')->name('admin.create.leave');
 Route::get('leave-info','Admin\LeaveController@leaveInfo')->name('admin.info.leave');
 
+//overtime route
+Route::get('create-overtime','Admin\OvertimeController@createOvertime')->name('admin.create.overtime');
+Route::get('overtime-info','Admin\OvertimeController@overtimeInfo')->name('admin.info.overtime');
+
 //salary route
 Route::get('create-salary','Admin\SalaryController@createSalary')->name('admin.create.salary');
 Route::get('salary-info','Admin\SalaryController@salaryInfo')->name('admin.info.salary');
@@ -70,4 +60,10 @@ Route::get('provident_info','Admin\ProvidentFundController@providentInfo')->name
 
 
 
+
+
+// Auth::routes();
+Auth::routes(['register' => false]);
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('admin.dashboard');
 

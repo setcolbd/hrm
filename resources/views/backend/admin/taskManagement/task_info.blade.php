@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Track Task')
+@section('title','Task Task')
 
 @push('css')
 <style type="text/css">

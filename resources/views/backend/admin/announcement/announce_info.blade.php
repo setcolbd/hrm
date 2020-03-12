@@ -37,7 +37,7 @@
                     <div class="col-8 offset-md-2">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title m-b-0">Announcement</h4>
+                                <h5 class="card-title"> All Announcement <span class="badge badge-secondary btn-c">19</span></h5>
                             </div>
                             <div class="comment-widgets scrollable">
                                 <!-- Comment Row -->

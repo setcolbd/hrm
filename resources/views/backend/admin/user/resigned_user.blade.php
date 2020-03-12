@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Terminate Employee')
+@section('title','Resigned User')
 
 @push('css')
 <style type="text/css">
@@ -64,7 +64,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> Terminate Employee <span class="badge badge-secondary btn-c">11</span></h5>
+                                <h5 class="card-title"> Resigned Employee <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
@@ -73,7 +73,7 @@
                                                 <th>Card No</th>
                                                 <th>Designation</th>
                                                 <th>Joining date</th>
-                                                <th>Terminate date</th>
+                                                <th>Resign date</th>
                                                 <th>Contact No</th>
                                                 <th>Action</th>
                                             </tr>
@@ -83,20 +83,7 @@
                                                 <td>Tiger Nixon</td>
                                                 <td>System Architect</td>
                                                 <td>Edinburgh</td>
-                                                <td>2011/03/25</td>
-                                                <td>2011/08/25</td>
-                                                <td>0983485734</td>
-                                                <td class="text-center">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"><i class="fas fa-eye"></i></a>
-                                                    <a href="#" class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" title="" data-original-title="edit"><i class="fas fa-pencil-alt"></i></a>
-                                                    <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="delete"><i class="fas fa-trash-alt"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>2011/05/25</td>
+                                                <td>2011/04/25</td>
                                                 <td>2011/04/25</td>
                                                 <td>0983485734</td>
                                                 <td class="text-center">
@@ -113,7 +100,7 @@
                                                 <th>Card No</th>
                                                 <th>Designation</th>
                                                 <th>Joining date</th>
-                                                <th>Terminate date</th>
+                                                <th>Resign date</th>
                                                 <th>Contact No</th>
                                                 <th>Action</th>
                                             </tr>

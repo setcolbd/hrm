@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Add Group')
+@section('title','Create Group')
 
 @push('css')
 <style type="text/css">
@@ -39,7 +39,7 @@
                     <div class="col-8 offset-md-2">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> All User Group <span class="badge badge-secondary">19</span></h5>
+                                <h5 class="card-title"> All User Group <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
@@ -110,7 +110,7 @@
                         <input type="text" class="form-control" id="group" name="group" placeholder="Enter Group Name">
                     </div>
                 </div>
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <label for="assign_to" class="col-sm-3 text-right control-label col-form-label">Group Member</label>
                     <div class="col-sm-9">
                         <select class="form-control select2" multiple="">
@@ -118,7 +118,7 @@
                             <option>Tumi</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group row">
                     <label for="assign_to" class="col-sm-3 text-right control-label col-form-label">Group Member</label>
                     <div class="col-sm-9">

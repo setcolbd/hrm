@@ -7,19 +7,19 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
-    public function createEmployee(){
-    	return view('backend.admin.employee.create_employee');
+    public function createUser(){
+    	return view('backend.admin.user.create_user');
     }
 
-   public function employeeinfo(){
-    	return view('backend.admin.employee.employee_info');
+   public function UserInfo(){
+    	return view('backend.admin.user.user_info');
     } 
 
-    public function resignEmployee(){
-    	return view('backend.admin.employee.resigned_employee');
+    public function resignUser(){
+    	return view('backend.admin.user.resigned_user');
     } 
 
-    public function terminateEmployee(){
-    	return view('backend.admin.employee.terminate_employee');
+    public function terminateUser(){
+    	return view('backend.admin.user.terminate_user');
     } 
 }

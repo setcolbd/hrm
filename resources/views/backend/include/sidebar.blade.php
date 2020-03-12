@@ -5,12 +5,12 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.dashboard')}}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-user-circle"></i><span class="hide-menu">Employee</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-user-circle"></i><span class="hide-menu">User</span></a>
                             <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{route('admin.create.employee')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create Employee </span></a></li>
-                                <li class="sidebar-item"><a href="{{route('admin.info.employee')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Employee Info </span></a></li>
-                                <li class="sidebar-item"><a href="{{route('admin.resign.employee')}}" class="sidebar-link"><i class="fas fa-user-times"></i><span class="hide-menu"> Resigned Employee </span></a></li>
-                                <li class="sidebar-item"><a href="{{route('admin.terminate.employee')}}" class="sidebar-link"><i class="fas fa-cut"></i><span class="hide-menu"> Terminate Employee </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.create.user')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create User </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.info.user')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> User Info </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.resign.user')}}" class="sidebar-link"><i class="fas fa-user-times"></i><span class="hide-menu"> Resigned User </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.terminate.user')}}" class="sidebar-link"><i class="fas fa-cut"></i><span class="hide-menu"> Terminate User </span></a></li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-check-circle"></i><span class="hide-menu">Attendance</span></a>
@@ -46,6 +46,12 @@
                                 <li class="sidebar-item"><a href="{{route('admin.info.leave')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Leave Info </span></a></li>
                             </ul>
                         </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-clock"></i><span class="hide-menu">Overtime</span></a>
+                            <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('admin.create.overtime')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu">Create Overtime</span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.info.overtime')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Overtime Info </span></a></li>
+                            </ul>
+                        </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-donate"></i><span class="hide-menu">Payroll</span></a>
                             <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{route('admin.create.salary')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu">Create salaray</span></a></li>
@@ -59,7 +65,7 @@
                                 <li class="sidebar-item"><a href="{{route('admin.info.announcement')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Announce Info </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.create.role')}}" aria-expanded="false"><i class=" fas fa-sort-alpha-up"></i><span class="hide-menu">Role Create</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.create.role')}}" aria-expanded="false"><i class=" fas fa-sort-alpha-up"></i><span class="hide-menu">Role </span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

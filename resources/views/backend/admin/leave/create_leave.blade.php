@@ -43,7 +43,7 @@
                                     <div class="form-group row">
                                         <label for="from_date" class="col-sm-3 text-right control-label col-form-label">From Date</label>
                                          <div class="col-sm-9 input-group">
-                                            <input type="text" class="form-control" id="from_date" placeholder="mm/dd/yyy">
+                                            <input type="text" class="form-control" id="from_date" placeholder="From Date">
                                             <div class="input-group-append">
                                               <span class="form-control"><i class="fa fa-calendar"></i></span>
                                             </div>
@@ -52,7 +52,7 @@
                                     <div class="form-group row">
                                         <label for="to_date" class="col-sm-3 text-right control-label col-form-label">To Date</label>
                                             <div class="col-sm-9 input-group">
-                                            <input type="text" class="form-control" id="to_date" placeholder="mm/dd/yyy">
+                                            <input type="text" class="form-control" id="to_date" placeholder="To Date">
                                             <div class="input-group-append">
                                               <span class="form-control"><i class="fa fa-calendar"></i></span>
                                             </div>

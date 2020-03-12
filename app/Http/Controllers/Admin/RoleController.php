@@ -10,4 +10,8 @@ class RoleController extends Controller
     public function createRole(){
     	return view('backend.admin.role.create_role');
     }
+
+    public function roleInfo(){
+    	return view('backend.admin.role.role_info');
+    }
 }

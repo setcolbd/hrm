@@ -57,7 +57,7 @@
                     <div class="col-8 offset-md-2">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"> All Employee <span class="badge badge-secondary">19</span></h5>
+                                <h5 class="card-title"> All Employee <span class="badge badge-secondary btn-c">19</span></h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>

@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Create Group')
+@section('title','User Group Info')
 
 @push('css')
 <style type="text/css">
@@ -19,13 +19,6 @@
         <div class="row">
             <div class="col-8 offset-md-2 d-flex no-block align-items-center">
                 <h4 class="page-title">Dashboard</h4>
-                <div class="ml-auto text-right">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <button type="button" class="btn btn-c btn-sm margin-5 text-white" data-toggle="modal" data-target="#AddGroupModal"><i class="fas fa-plus"></i>Add New Group</button>
-                        </ol>
-                    </nav>
-                </div>
             </div>
         </div>
     </div>
@@ -91,58 +84,7 @@
     </div>
     <!-- ============================================================== -->
     <!-- End Container fluid  -->
-
-<!-- // Add Group Modal -->
-<div class="modal fade" id="AddGroupModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Create New Group</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="" method="">
-                <div class="modal-body">
-                <div class="form-group row">
-                    <label for="group" class="col-sm-3 text-right control-label col-form-label">Group</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" id="group" name="group" placeholder="Enter Group Name">
-                    </div>
-                </div>
-                <!-- <div class="form-group row">
-                    <label for="assign_to" class="col-sm-3 text-right control-label col-form-label">Group Member</label>
-                    <div class="col-sm-9">
-                        <select class="form-control select2" multiple="">
-                            <option>Ami</option>
-                            <option>Tumi</option>
-                        </select>
-                    </div>
-                </div> -->
-                <div class="form-group row">
-                    <label for="assign_to" class="col-sm-3 text-right control-label col-form-label">Group Member</label>
-                    <div class="col-sm-9">
-                        <select class="form-control">
-                            <option>Ami</option>
-                            <option>Tumi</option>
-                        </select>
-                    </div>
-                </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-sm btn-c text">Submit</button>
-                </div>
-            </form>
-            
-        </div>
-    </div>
-</div>
 @push('js')
-<script src="{{asset('hrm/assets/libs/select2/dist/js/select2.full.min.js')}}"></script>
-<script src="{{asset('hrm/assets/libs/select2/dist/js/select2.min.js')}}"></script>
-<script>
-   $(".select2").select2();
-</script>
+
 @endpush
 @endsection            

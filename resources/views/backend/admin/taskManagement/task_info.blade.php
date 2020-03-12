@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title','Task Task')
+@section('title','Task Info')
 
 @push('css')
 <style type="text/css">
@@ -28,10 +28,10 @@
                 	</select>
                 </div>
                 <div class="col-md-2">
-                      <input type="date" class="form-control" id="start_date" placeholder="Start Date">
+                      <input type="text" class="form-control" id="start_date" placeholder="Start Date">
                 </div>
                 <div class="col-md-2">
-                      <input type="date" class="form-control" id="end_date" placeholder="End Date">
+                      <input type="text" class="form-control" id="end_date" placeholder="End Date">
                 </div>
                 <div class="col-md-2">
 		            <button type="submit" class="btn btn-c text"><i class="fas fa-search"></i> Search</button>

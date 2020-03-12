@@ -11,11 +11,15 @@ class LoanController extends Controller
     	return view('backend.admin.loan.create_loan');
     }
 
-    public function loanPeriod(){
+    public function loanInfo(){
+    	return view('backend.admin.loan.loan_info');
+    }
+
+    public function createLoanPeriod(){
     	return view('backend.admin.loan.create_loan_period');
     }
 
-    public function loanInfo(){
-    	return view('backend.admin.loan.loan_info');
+    public function loanPeriodInfo(){
+    	return view('backend.admin.loan.loanperiod_info');
     }
 }

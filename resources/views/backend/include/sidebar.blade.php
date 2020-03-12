@@ -11,6 +11,8 @@
                                 <li class="sidebar-item"><a href="{{route('admin.info.user')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> User Info </span></a></li>
                                 <li class="sidebar-item"><a href="{{route('admin.resign.user')}}" class="sidebar-link"><i class="fas fa-user-times"></i><span class="hide-menu"> Resigned User </span></a></li>
                                 <li class="sidebar-item"><a href="{{route('admin.terminate.user')}}" class="sidebar-link"><i class="fas fa-cut"></i><span class="hide-menu"> Terminate User </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.create.user-group')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create User Group </span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.info.user-group')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu">User Group Info </span></a></li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-check-circle"></i><span class="hide-menu">Attendance</span></a>
@@ -19,7 +21,6 @@
                                 <li class="sidebar-item"><a href="{{ route('admin.info.attendance') }}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu">Attendance Info </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"><a href="{{ route('admin.group.user') }}" class="sidebar-link"><i class="fas fa-user-circle"></i><span class="hide-menu"> User Group</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-chevron-circle-right"></i><span class="hide-menu">Task Assign </span></a>
                             <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{ route('admin.create.task') }}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create Task</span></a></li>
@@ -28,7 +29,8 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fab fa-gg-circle"></i><span class="hide-menu">Loan</span></a>
                             <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{ route('admin.create.loanperiod') }}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Loan Period</span></a></li>
+                                <li class="sidebar-item"><a href="{{ route('admin.create.loanperiod') }}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create Loan Period</span></a></li>
+                                <li class="sidebar-item"><a href="{{ route('admin.info.loanperiod') }}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Loan Period Info</span></a></li>
                                 <li class="sidebar-item"><a href="{{ route('admin.create.loan') }}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu"> Create Loan</span></a></li>
                                 <li class="sidebar-item"><a href="{{ route('admin.info.loan') }}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu">Loan info </span></a></li>
                             </ul>
@@ -65,7 +67,12 @@
                                 <li class="sidebar-item"><a href="{{route('admin.info.announcement')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Announce Info </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.create.role')}}" aria-expanded="false"><i class=" fas fa-sort-alpha-up"></i><span class="hide-menu">Role </span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="far fa-stop-circle"></i><span class="hide-menu">Role</span></a>
+                            <ul style="background:#373737;" aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{route('admin.create.role')}}" class="sidebar-link"><i class="fas fa-plus-circle"></i><span class="hide-menu">Create Role</span></a></li>
+                                <li class="sidebar-item"><a href="{{route('admin.info.role')}}" class="sidebar-link"><i class="fas fa-info-circle"></i><span class="hide-menu"> Role Info </span></a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

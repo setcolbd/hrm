@@ -13,19 +13,20 @@ Route::get('user-info','Admin\EmployeeController@userInfo')->name('admin.info.us
 Route::get('resign-user','Admin\EmployeeController@resignUser')->name('admin.resign.user');
 Route::get('terminate-user','Admin\EmployeeController@terminateUser')->name('admin.terminate.user');
 
+Route::get('create-user-group','Admin\EmployeeController@createUserGroup')->name('admin.create.user-group');
+Route::get('user-group-info','Admin\EmployeeController@userGroupInfo')->name('admin.info.user-group');
+
 //attendance route
 Route::get('create-attendance','Admin\AttendenceController@createAttendance')->name('admin.create.attendance');
 Route::get('attendance-info','Admin\AttendenceController@attendanceInfo')->name('admin.info.attendance');
-
-//user-group route
-Route::get('user-group','Admin\UserController@userGroup')->name('admin.group.user');
 
 //task route
 Route::get('create-task','Admin\TaskAssignController@createTask')->name('admin.create.task');
 Route::get('task-info','Admin\TaskAssignController@taskInfo')->name('admin.info.task');
 
 //loan route
-Route::get('create-loan-period','Admin\LoanController@loanPeriod')->name('admin.create.loanperiod');
+Route::get('create-loan-period','Admin\LoanController@createloanPeriod')->name('admin.create.loanperiod');
+Route::get('loan-period-info','Admin\LoanController@loanPeriodInfo')->name('admin.info.loanperiod');
 Route::get('create-loan','Admin\LoanController@createLoan')->name('admin.create.loan');
 Route::get('loan-info','Admin\LoanController@loanInfo')->name('admin.info.loan');
 
@@ -52,11 +53,12 @@ Route::get('salary-info','Admin\SalaryController@salaryInfo')->name('admin.info.
 Route::get('create-announcement','Admin\AnnouncementController@createAnnouncement')->name('admin.create.announcement');
 Route::get('announcement-info','Admin\AnnouncementController@announcementInfo')->name('admin.info.announcement');
 
-//role route
-Route::get('create-role','Admin\RoleController@createRole')->name('admin.create.role');
-
 //provident route
 Route::get('provident_info','Admin\ProvidentFundController@providentInfo')->name('admin.info.provident');
+
+//role route
+Route::get('create-role','Admin\RoleController@createRole')->name('admin.create.role');
+Route::get('role-info','Admin\RoleController@roleInfo')->name('admin.info.role');
 
 
 

@@ -22,4 +22,12 @@ class EmployeeController extends Controller
     public function terminateUser(){
     	return view('backend.admin.user.terminate_user');
     } 
+
+    public function createUserGroup(){
+        return view('backend.admin.user.create_user_group');
+    }
+
+    public function userGroupInfo(){
+        return view('backend.admin.user.user_group_info');
+    }
 }
